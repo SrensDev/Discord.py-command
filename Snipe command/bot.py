@@ -18,7 +18,7 @@ async def snipe(ctx):
         contents, author, channel_name, time = bot.sniped_messages[ctx.guild.id]
 
     except:
-        await ctx.channel.send("Couldn't find a message to snipe!")
+        await ctx.channel.send("Couldn't find any deleted message!")
         return
 
     embed = discord.Embed(description=contents, color=discord.Color.purple(), timestamp=time)
@@ -27,4 +27,4 @@ async def snipe(ctx):
 
     await ctx.channel.send(embed=embed)
 
-bot.run('Nzk5OTgzNTY5MDQ4MzA1NjY0.YALgwQ.5VR6OtfG3WIEskfxZTgmYSpox5w')
+bot.run('YOUR BOT TOKEN')
